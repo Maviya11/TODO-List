@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TODO</title>
+  <link rel="stylesheet" href="../Style Sheets/style.css">
+</head>
+
+<body>
+  <div class="add-todo">
+    <input type="text" placeholder="Enter TODO here" class="enter-todo" maxlength="35">
+    <input type="date" class="select-date">
+
+    <button class="add-button" 
+    onclick="
+    getTodoAndDate()
+    // getText()
+    // appendNewRow()
+    clearInput()
+    ;">Add</button>
+  </div>
+
+  <div id="todo-list">
+
+    <!-- This is TODO List heading -->
+    <div class="todos-heading">
+      <div class="sr-no">Sr No.</div>
+      <div class="actual-todo">TODO</div>
+      <div class="todo-date">Date</div>
+      <div class="delete-todo-button"></div>
+    </div>
+
+    
+    <!-- TODO starts from here -->
+    <div id="increasing-list">
+      <!-- <hr class="hr">
+      <div class="todos-heading">
+
+      </div> -->
+    </div>
+
+  </div>
+  <script src="../JavaScript/script.js"></script>
+</body>
+
+</html>
