@@ -47,9 +47,6 @@ function appendNewRow() {
   /*--- Get's todo and its date from the browser's local storage ---*/
   let exTodo = JSON.parse(localStorage.getItem("Todos"));
   let exDate = JSON.parse(localStorage.getItem("Dates"));
-  
-  // console.log(exTodo);
-  // console.log(exDate);
 
   let list = document.querySelector("#increasing-list"); //Select Parent
   list.innerHTML = "";
