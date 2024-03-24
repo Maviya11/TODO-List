@@ -7,6 +7,8 @@ let deleteButton;
 let newDate;
 let newTodo;
 
+appendNewRow();
+
 let todo = JSON.parse(localStorage.getItem("Todos")) || [];
 let date = JSON.parse(localStorage.getItem("Dates")) || [];
 
@@ -54,7 +56,7 @@ function appendNewRow() {
   for (let i = 0; i <exTodo.length; i++){
 
     let newText = exTodo[i];
-    let newnumber = exDate[i];
+    let newNumber = exDate[i];
     
 
     newHr = document.createElement("hr"); //Create <hr>
@@ -83,7 +85,7 @@ function appendNewRow() {
 
     newDiv.append(dateDiv);
     dateDiv.setAttribute("class", "todo-date");
-    dateDiv.innerText = newnumber;
+    dateDiv.innerText = newNumber;
 
 
     newDiv.append(deleteButton);
@@ -98,5 +100,3 @@ function clearInput() {
   document.querySelector(".enter-todo").value = "";
 }
 
-
-setInterval(appendNewRow(), 1000);
